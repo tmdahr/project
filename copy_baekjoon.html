@@ -1,0 +1,754 @@
+<html lang="ko"><head>
+<title>Baekjoon Online Judge</title><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/><meta content="스타트링크 (Startlink)" name="author"/><meta content="ACM-ICPC, ICPC, 프로그래밍, 온라인 저지, 정보올림피아드, 코딩, 알고리즘, 대회, 올림피아드, 자료구조" name="keywords"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="website" property="og:type"/><meta content="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/images/boj-og.png" property="og:image"/><meta content="Baekjoon Online Judge" property="og:site_name"/><meta content="telephone=no" name="format-detection"/><meta content="none" name="msapplication-config"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/site.webmanifest" rel="manifest"/><link color="#0076c0" href="/safari-pinned-tab.svg" rel="mask-icon"/><meta content="#00aba9" name="msapplication-TileColor"/><meta content="#ffffff" name="theme-color"/><link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/><link href="https://ddo7jzca0m2vt.cloudfront.net/unify/css/style.css?version=20240111" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Open+Sans:400,400i,700,700i|Source+Code+Pro&amp;subset=korean" rel="stylesheet"/><link href="https://ddo7jzca0m2vt.cloudfront.net/css/connect.css?version=20240111" rel="stylesheet"/><link href="https://ddo7jzca0m2vt.cloudfront.net/css/result.css?version=20240111" rel="stylesheet"/><link href="https://ddo7jzca0m2vt.cloudfront.net/css/label.css?version=20240111" rel="stylesheet"/><link href="https://ddo7jzca0m2vt.cloudfront.net/unify/css/custom.css?version=20240111" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet"/><link href="https://ddo7jzca0m2vt.cloudfront.net/unify/css/theme-colors/blue.css?version=20240111" rel="stylesheet"/><link href="https://ddo7jzca0m2vt.cloudfront.net/css/pace.css" rel="stylesheet"/>
+<script async="" src="https://connect.facebook.net/signals/config/1670563073163149?v=2.9.214&amp;r=stable&amp;domain=www.acmicpc.net&amp;hme=3a8008a6f0cd88c861b1cd2bda7f70b9072223018277cd4c0254ee4884c65e05&amp;ex_m=83%2C141%2C124%2C17%2C117%2C58%2C39%2C118%2C64%2C57%2C129%2C72%2C12%2C82%2C25%2C112%2C103%2C62%2C65%2C111%2C128%2C91%2C131%2C7%2C3%2C4%2C6%2C5%2C2%2C73%2C81%2C132%2C203%2C153%2C52%2C208%2C205%2C206%2C44%2C166%2C24%2C61%2C212%2C211%2C155%2C27%2C51%2C8%2C54%2C77%2C78%2C79%2C84%2C107%2C26%2C23%2C110%2C106%2C105%2C125%2C63%2C127%2C49%2C126%2C40%2C108%2C50%2C100%2C11%2C36%2C194%2C196%2C163%2C20%2C21%2C22%2C14%2C15%2C35%2C32%2C33%2C68%2C74%2C76%2C89%2C116%2C119%2C37%2C90%2C18%2C16%2C94%2C59%2C30%2C121%2C120%2C122%2C113%2C19%2C29%2C48%2C88%2C28%2C176%2C149%2C86%2C109%2C67%2C98%2C43%2C38%2C96%2C97%2C102%2C47%2C13%2C104%2C95%2C55%2C42%2C45%2C0%2C80%2C130%2C1%2C101%2C10%2C99%2C252%2C192%2C139%2C179%2C172%2C9%2C46%2C75%2C53%2C123%2C56%2C93%2C71%2C70%2C41%2C114%2C69%2C66%2C60%2C92%2C85%2C34%2C115%2C31%2C87%2C133"></script><script async="" crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js?hash=eeeefb23869f1b67707ba4055dc92919"></script><script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/ko_KR/sdk.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C81GGQEMJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+//난 강준영
+  gtag('config', 'G-C81GGQEMJZ');
+</script>
+<style>
+  .navbar-nav > li.dropdown:hover .dropdown-menu {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+  }
+  .mega-menu-fullwidth:hover .dropdown-menu {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      top: 100% !important;
+  }
+  </style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" rel="stylesheet"/><meta content="" name="username"/>
+<link href="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/revolution-slider/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]><link rel="stylesheet" href="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+<script charset="UTF-8" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/input/tex/extensions/noerrors.js"></script><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-copytext {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style><style data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget" type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+</style>
+<style>
+.navbar-nav > li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+</style>
+</head>
+<body class="pace-done"><div class="pace pace-inactive"><div class="pace-progress" data-progress="99" data-progress-text="100%" style="transform: translate3d(100%, 0px, 0px);">
+<div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<div class="wrapper">
+<div class="header no-print"><div class="topbar"><div class="container"><ul class="loginbar pull-right"><li><a href="https://www.acmicpc.net/register">회원가입</a></li><li class="topbar-devider"></li><li><a href="https://www.acmicpc.net/login?next=%2F">로그인</a></li></ul></div></div><div class="navbar navbar-default mega-menu" role="navigation"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="fa fa-bars"></span></button><a class="navbar-brand" href="https://www.acmicpc.net/"><img alt="Logo" data-retina="" id="logo-header" src="https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png"/></a></div><div class="collapse navbar-collapse navbar-responsive-collapse"><ul class="nav navbar-nav"><li class="dropdown mega-menu-fullwidth"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">문제</a><ul class="dropdown-menu"><li><div class="mega-menu-content"><div class="container"><div class="row equal-height"><div class="col-md-3 equal-height-in"><ul class="list-unstyled equal-height-list"><li><h3>문제</h3></li><li><a href="https://www.acmicpc.net/problemset">전체 문제</a></li><li><a href="https://www.acmicpc.net/category">문제 출처</a></li><li><a href="https://www.acmicpc.net/step">단계별로 풀어보기</a></li><li><a href="https://www.acmicpc.net/problem/tags">알고리즘 분류</a></li><li><a href="https://www.acmicpc.net/problem/added">추가된 문제</a></li><li><a href="https://www.acmicpc.net/problem/ranking">문제 순위</a></li></ul></div><div class="col-md-3 equal-height-in"><ul class="list-unstyled equal-height-list"><li><h3>문제</h3></li><li><a href="https://www.acmicpc.net/problem/only">푼 사람이 한 명인 문제</a></li><li><a href="https://www.acmicpc.net/problem/nobody">아무도 못 푼 문제</a></li><li><a href="https://www.acmicpc.net/problem/recent/submit">최근 제출된 문제</a></li><li><a href="https://www.acmicpc.net/problem/recent/accepted">최근 풀린 문제</a></li><li><a href="https://www.acmicpc.net/problem/random">랜덤</a></li></ul></div><div class="col-md-3 equal-height-in"><ul class="list-unstyled equal-height-list"><li><h3>출처</h3></li><li><a href="https://www.acmicpc.net/category/1">ICPC</a></li><li><a href="https://www.acmicpc.net/category/2">Olympiad</a></li><li><a href="https://www.acmicpc.net/category/55">한국정보올림피아드</a></li><li><a href="https://www.acmicpc.net/category/57">한국정보올림피아드시․도지역본선</a></li><li><a href="https://www.acmicpc.net/category/318">전국 대학생 프로그래밍 대회 동아리 연합</a></li><li><a href="https://www.acmicpc.net/category/5">대학교 대회</a></li><li><a href="https://www.acmicpc.net/category/428">카카오 코드 페스티벌</a></li><li><a href="https://www.acmicpc.net/category/215">Coder's High</a></li></ul></div><div class="col-md-3 equal-height-in"><ul class="list-unstyled equal-height-list"><li><h3>ICPC</h3></li><li><a href="https://www.acmicpc.net/category/7">Regionals</a></li><li><a href="https://www.acmicpc.net/category/4">World Finals</a></li><li><a href="https://www.acmicpc.net/category/211">Korea Regional</a></li><li><a href="https://www.acmicpc.net/category/34">Africa and the Middle East Regionals</a></li><li><a href="https://www.acmicpc.net/category/10">Europe Regionals</a></li><li><a href="https://www.acmicpc.net/category/103">Latin America Regionals</a></li><li><a href="https://www.acmicpc.net/category/8">North America Regionals</a></li><li><a href="https://www.acmicpc.net/category/92">South Pacific Regionals</a></li></ul></div></div></div></div></li></ul></li><li><a href="https://www.acmicpc.net/workbook/top">문제집</a></li><li><a href="https://www.acmicpc.net/contest/official/list">대회<span class="badge badge-red rounded-2x">1</span></a></li><li><a href="https://www.acmicpc.net/status">채점 현황</a></li><li><a href="https://www.acmicpc.net/ranklist">랭킹</a></li><li><a href="https://www.acmicpc.net/board/list/all">게시판</a></li><li><a href="https://www.acmicpc.net/group/list/all">그룹</a></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">더 보기</a><ul class="dropdown-menu"><li><a href="https://www.acmicpc.net/change">재채점 기록</a></li><li><a href="https://www.acmicpc.net/blog/list">블로그</a></li><li><a href="https://www.acmicpc.net/lectures">강의</a></li><li><a href="https://www.acmicpc.net/labs">실험실</a></li><li><a href="https://help.acmicpc.net/" target="_blank">도움말  <i class="fa fa-external-link"></i></a></li><li><a href="https://stack.acmicpc.net/" target="_blank">BOJ Stack  <i class="fa fa-external-link"></i></a></li><li><a href="https://book.acmicpc.net/" target="_blank">BOJ Book  <i class="fa fa-external-link"></i></a></li></ul></li><li><a href="https://www.acmicpc.net/search"><i class="fa fa-search search-btn"></i></a></li></ul></div></div></div></div><form action="/logout" id="logout_form" method="post"><input name="next" type="hidden" value="%2F"/></form>
+<div class="text-center main-slider-ad"><a href="https://bit.ly/4lqPfUo" onclick="App.trackOutboundLink('https://bit.ly/4lqPfUo'); return false;" style="display: none !important;"><img class="visible-xs-block" src="https://upload.acmicpc.net/f8600342-aef2-43f6-9e66-1ecda92d5136/-/preview/" style="width: 100%;"/><img class="visible-sm-block" src="https://upload.acmicpc.net/475a4f53-4bb3-4668-86dd-fcc2397a0024/-/preview/" style="width: 100%;"/><img class="visible-md-block" src="https://upload.acmicpc.net/49310e2a-4bc9-4266-8c49-db1789d95685/-/preview/" style="width: 100%;"/><img class="visible-lg-block" src="https://upload.acmicpc.net/ed2125fc-9d5a-4dfb-809c-2faf2fad215b/-/preview/" style="width: 100%;"/></a></div>
+<div class="container content-sm">
+<div class="text-center margin-bottom-50">
+<h2 class="title-v2 title-center">Baekjoon Online Judge</h2>
+<p class="space-lg-hor">프로그래밍 문제를 풀고 온라인으로 채점받을 수 있는 곳입니다.</p>
+</div>
+</div>
+<div class="parallax-counter-v1 parallaxBg" style="background-position: 50% 68px;">
+<div class="container">
+<div class="row margin-bottom-10">
+<div class="col-sm-3 col-xs-6">
+<div class="counters">
+<span class="counter">33052</span>
+<h4>전체 문제</h4>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="counters">
+<span class="counter">31979</span>
+<h4>채점 가능한 문제</h4>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="counters">
+<span class="counter">29816</span>
+<h4>풀린 문제</h4>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="counters">
+<span class="counter">72</span>
+<h4>채점 가능한 언어</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container content">
+<div class="col-md-3 col-sm-6 md-margin-bottom-40">
+<div class="blog-twitter">
+<div class="headline"><h2><a href="https://www.acmicpc.net/board">새로운 글</a></h2></div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a href="https://www.acmicpc.net/user/codingismylife">@codingismylife</a>
+<a class="article-subject" href="https://www.acmicpc.net/board/view/161139">BFS로 풀었는데 시간 초과가 발생합니다...</a>
+<span class="twitter-time">47분 전
+                <span class="glyphicon glyphicon-thumbs-up"></span> 0
+                <span class="glyphicon glyphicon-comment"></span> 0
+                </span>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a href="https://www.acmicpc.net/user/solsolsol">@solsolsol</a>
+<a class="article-subject" href="https://www.acmicpc.net/board/view/161138">[솔데스크]IT 부트캠프! JAVA·AWS클라우드·AI 국비지원 교육</a>
+<span class="twitter-time">1시간 전
+                <span class="glyphicon glyphicon-thumbs-up"></span> 0
+                <span class="glyphicon glyphicon-comment"></span> 0
+                </span>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a href="https://www.acmicpc.net/user/adfsfsf">@adfsfsf</a>
+<a class="article-subject" href="https://www.acmicpc.net/board/view/161137">반례를 알고 싶습니다.</a>
+<span class="twitter-time">2시간 전
+                <span class="glyphicon glyphicon-thumbs-up"></span> 0
+                <span class="glyphicon glyphicon-comment"></span> 1
+                </span>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a href="https://www.acmicpc.net/user/backstone">@backstone</a>
+<a class="article-subject" href="https://www.acmicpc.net/board/view/161136">13549번 반례나 풀이 방식에 문제가 있으면 설명 부탁드립니다ㅠㅠ</a>
+<span class="twitter-time">2시간 전
+                <span class="glyphicon glyphicon-thumbs-up"></span> 0
+                <span class="glyphicon glyphicon-comment"></span> 2
+                </span>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a href="https://www.acmicpc.net/user/eaststst123">@eaststst123</a>
+<a class="article-subject" href="https://www.acmicpc.net/board/view/161135">파이썬 런타임 (ValueError) 도와주세요..</a>
+<span class="twitter-time">3시간 전
+                <span class="glyphicon glyphicon-thumbs-up"></span> 0
+                <span class="glyphicon glyphicon-comment"></span> 3
+                </span>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 md-margin-bottom-40">
+<div class="blog-twitter">
+<div class="headline"><h2><a href="https://www.acmicpc.net/problem/added/0">추가된 한국어 문제</a></h2></div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/34047">
+                34047번 지옥도
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/34046">
+                34046번 아귀도
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/34045">
+                34045번 축생도
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/34044">
+                34044번 인간도
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/34043">
+                34043번 수라도
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/34042">
+                34042번 천상도
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/34050">
+                34050번 타일 깔기
+                </a>
+</div>
+</div>
+</div>
+<div class="clearfix visible-sm"></div>
+<div class="col-md-3 col-sm-6 md-margin-bottom-40">
+<div class="blog-twitter">
+<div class="headline"><h2><a href="https://www.acmicpc.net/problem/added/1">추가된 영어 문제</a></h2></div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/33855">
+                33855번 Tour
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/33859">
+                33859번 Gingerbread
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/33858">
+                33858번 Exponents
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/33857">
+                33857번 Developer
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/33854">
+                33854번 BOI acronym
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/33800">
+                33800번 Ramen Packs
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/33799">
+                33799번 Subsequence MEX
+                </a>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 md-margin-bottom-40">
+<div class="blog-twitter">
+<div class="headline"><h2><a href="https://www.acmicpc.net/problem/ranking">문제 순위</a></h2></div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/1000">
+                1000번 A+B
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/2557">
+                2557번 Hello World
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/1008">
+                1008번 A/B
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/10869">
+                10869번 사칙연산
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/1330">
+                1330번 두 수 비교하기
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/1001">
+                1001번 A-B
+                </a>
+</div>
+<div class="blog-twitter-inner">
+<i class="icon-twitter"></i>
+<a class="article-subject" href="https://www.acmicpc.net/problem/9498">
+                9498번 시험 성적
+                </a>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-v3 no-print"><div class="footer"><div class="container"><div class="row"><div class="col-sm-3 md-margin-bottom-40"><div class="thumb-headline"><h2>Baekjoon Online Judge</h2></div><ul class="list-unstyled simple-list margin-bottom-10"><li><a href="https://www.acmicpc.net/about">소개</a></li><li><a href="https://www.acmicpc.net/news">뉴스</a></li><li><a href="https://www.acmicpc.net/live">생중계</a></li><li><a href="https://www.acmicpc.net/poll">설문조사</a></li><li><a href="https://www.acmicpc.net/blog">블로그</a></li><li><a href="https://www.acmicpc.net/board/view/70222">디스코드 서버</a></li><li><a href="https://www.acmicpc.net/donate">기부하기</a></li><li><a href="https://github.com/Startlink/BOJ-Feature-Request">기능 추가 요청</a></li><li><a href="https://github.com/Startlink/BOJ-spj">스페셜 저지 제작</a></li><li><a href="https://www.acmicpc.net/labs">실험실</a></li></ul><div class="thumb-headline"><h2>채점 현황</h2></div><ul class="list-unstyled simple-list"><li><a href="https://www.acmicpc.net/status">채점 현황</a></li></ul></div><div class="col-sm-3 md-margin-bottom-40"><div class="thumb-headline"><h2>문제</h2></div><ul class="list-unstyled simple-list margin-bottom-10"><li><a href="https://www.acmicpc.net/problemset">문제</a></li><li><a href="https://www.acmicpc.net/step">단계</a></li><li><a href="https://www.acmicpc.net/problem/tags">분류</a></li><li><a href="https://www.acmicpc.net/problem/added">추가된 문제</a></li><li><a href="https://www.acmicpc.net/problem/ranking">문제 순위</a></li><li><a href="https://www.acmicpc.net/problem/recent/submit">최근 제출된 문제</a></li><li><a href="https://www.acmicpc.net/problem/recent/accepted">최근 풀린 문제</a></li><li><a href="https://www.acmicpc.net/change">재채점 및 문제 수정</a></li></ul><div class="thumb-headline"><h2>유저 대회</h2></div><ul class="list-inline simple-list margin-bottom"><li><a href="https://www.acmicpc.net/category/353">FunctionCup</a></li><li><a href="https://www.acmicpc.net/category/469">Good Bye, BOJ</a></li><li><a href="https://www.acmicpc.net/category/319">kriiicon</a></li><li><a href="https://www.acmicpc.net/category/420">구데기컵</a></li><li><a href="https://www.acmicpc.net/category/358">꼬마컵</a></li><li><a href="https://www.acmicpc.net/category/421">네블컵</a></li><li><a href="https://www.acmicpc.net/category/413">소프트콘</a></li><li><a href="https://www.acmicpc.net/category/416">웰노운컵</a></li><li><a href="https://www.acmicpc.net/category/441">키파컵</a></li><li><a href="https://www.acmicpc.net/category/496">폴리매스 코드 챔피언십</a></li><li><a href="https://www.acmicpc.net/category/detail/1743">HYEA Cup</a></li></ul><div class="thumb-headline"><h2>고등학교 대회</h2></div><ul class="list-inline simple-list margin-bottom"><li><a href="https://www.acmicpc.net/category/836">NLCS Jeju</a></li><li><a href="https://www.acmicpc.net/category/364">경기과학고등학교</a></li><li><a href="https://www.acmicpc.net/category/630">경기북과학고등학교</a></li><li><a href="https://www.acmicpc.net/category/669">단국대학교부속소프트웨어고등학교</a></li><li><a href="https://www.acmicpc.net/category/417">대구과학고등학교</a></li><li><a href="https://www.acmicpc.net/category/855">대구소프트웨어마이스터고등학교</a></li><li><a href="https://www.acmicpc.net/category/664">동래고등학교</a></li><li><a href="https://www.acmicpc.net/category/429">부산일과학고</a></li><li><a href="https://www.acmicpc.net/category/435">서울과학고등학교</a></li><li><a href="https://www.acmicpc.net/category/394">선린인터넷고등학교</a></li><li><a href="https://www.acmicpc.net/category/610">세종과학예술영재학교</a></li><li><a href="https://www.acmicpc.net/category/854">송도고등학교</a></li><li><a href="https://www.acmicpc.net/category/542">한국과학영재학교</a></li></ul></div><div class="col-sm-3 md-margin-bottom-40"><div class="thumb-headline"><h2>출처</h2></div><ul class="list-unstyled simple-list margin-bottom-10"><li><a href="https://www.acmicpc.net/category/1">ICPC</a></li><li><a href="https://www.acmicpc.net/category/211">ICPC Korea Regional</a></li><li><a href="https://www.acmicpc.net/category/2">Olympiad</a></li><li><a href="https://www.acmicpc.net/category/55">한국정보올림피아드</a></li><li><a href="https://www.acmicpc.net/category/57">한국정보올림피아드시․도지역본선</a></li><li><a href="https://www.acmicpc.net/category/428">카카오 코드 페스티벌</a></li><li><a href="https://www.acmicpc.net/category/215">Coder's High</a></li><li><a href="https://www.acmicpc.net/category/485">Open Cup</a></li><li><a href="https://www.acmicpc.net/category/477">Petrozavodsk Programming Camp</a></li></ul><div class="thumb-headline"><h2>대학교 대회</h2></div><ul class="list-inline simple-list"><li><a href="https://www.acmicpc.net/category/662">DGIST</a></li><li><a href="https://www.acmicpc.net/category/320">KAIST</a></li><li><a href="https://www.acmicpc.net/category/426">POSTECH</a></li><li><a href="https://www.acmicpc.net/category/461">UNIST</a></li><li><a href="https://www.acmicpc.net/category/466">가톨릭대학교</a></li><li><a href="https://www.acmicpc.net/category/518">강원대학교</a></li><li><a href="https://www.acmicpc.net/category/454">건국대학교</a></li><li><a href="https://www.acmicpc.net/category/438">경북대학교</a></li><li><a href="https://www.acmicpc.net/category/341">고려대학교</a></li><li><a href="https://www.acmicpc.net/category/434">광주과학기술원</a></li><li><a href="https://www.acmicpc.net/category/361">국민대학교</a></li><li><a href="https://www.acmicpc.net/category/671">부산대학교</a></li><li><a href="https://www.acmicpc.net/category/83">서강대학교</a></li><li><a href="https://www.acmicpc.net/category/674">서울과학기술대학교</a></li><li><a href="https://www.acmicpc.net/category/354">서울대학교</a></li><li><a href="https://www.acmicpc.net/category/709">서울사이버대학교</a></li><li><a href="https://www.acmicpc.net/category/468">성균관대학교</a></li><li><a href="https://www.acmicpc.net/category/527">숙명여자대학교</a></li><li><a href="https://www.acmicpc.net/category/352">숭실대학교</a></li><li><a href="https://www.acmicpc.net/category/408">아주대학교</a></li><li><a href="https://www.acmicpc.net/category/334">연세대학교</a></li><li><a href="https://www.acmicpc.net/category/541">연세대학교 미래캠퍼스</a></li><li><a href="https://www.acmicpc.net/category/467">인천대학교</a></li><li><a href="https://www.acmicpc.net/category/336">인하대학교</a></li><li><a href="https://www.acmicpc.net/category/925">전남대학교</a></li><li><a href="https://www.acmicpc.net/category/347">전북대학교</a></li><li><a href="https://www.acmicpc.net/category/609">제주대학교</a></li><li><a href="https://www.acmicpc.net/category/400">중앙대학교</a></li><li><a href="https://www.acmicpc.net/category/402">충남대학교</a></li><li><a href="https://www.acmicpc.net/category/607">한국항공대학교</a></li><li><a href="https://www.acmicpc.net/category/440">한양대학교</a></li><li><a href="https://www.acmicpc.net/category/418">한양대학교 ERICA 캠퍼스</a></li><li><a href="https://www.acmicpc.net/category/363">홍익대학교</a></li><li><a href="https://www.acmicpc.net/category/409">경인지역 6개대학 연합 프로그래밍 경시대회</a></li><li><a href="https://www.acmicpc.net/category/318">전국 대학생 프로그래밍 대회 동아리 연합</a></li></ul></div><div class="col-sm-3 md-margin-bottom-40"><div class="thumb-headline"><h2><a href="https://help.acmicpc.net">도움말</a></h2></div><ul class="list-unstyled simple-list margin-bottom-10"><li><a href="https://help.acmicpc.net/judge/info">채점 도움말 및 채점 환경</a></li><li><a href="https://help.acmicpc.net/judge/rejudge">재채점 안내</a></li><li><a href="https://help.acmicpc.net/judge/rte">런타임 에러 도움말</a></li><li><a href="https://help.acmicpc.net/problem/style">문제 스타일 안내</a></li><li><a href="https://help.acmicpc.net/language/info">컴파일 또는 실행 옵션, 컴파일러 버전, 언어 도움말</a></li><li><a href="https://help.acmicpc.net/workbook">문제집 도움말</a></li><li><a href="https://help.acmicpc.net/contest/open">대회 개최 안내</a></li><li><a href="https://help.acmicpc.net/problem/add">문제 출제 안내</a></li><li><a href="https://help.acmicpc.net/rule">이용 규칙</a></li><li><a href="https://help.acmicpc.net/stats">통계 도움말</a></li><li><a href="https://help.acmicpc.net/question">질문 도움말</a></li><li><a href="https://help.acmicpc.net/faq">자주묻는 질문</a></li><li><a href="https://help.acmicpc.net/etc/short">짧은 주소 안내</a></li><li><a href="https://help.acmicpc.net/ad">광고 안내</a></li></ul></div></div></div></div><div class="copyright"><div class="container"><div class="row"><div class="col-md-9 col-sm-12"><p>© 2025 All Rights Reserved. <a href="https://startlink.io">주식회사 스타트링크</a> | <a href="https://www.acmicpc.net/terms">서비스 약관</a> | <a href="https://www.acmicpc.net/privacy">개인정보 보호</a> | <a href="https://www.acmicpc.net/terms/payment">결제 이용 약관</a> | <a href="https://help.acmicpc.net">도움말</a> | <a href="https://help.acmicpc.net/ad">광고 문의</a> | <a href="https://github.com/Startlink/update-note/blob/master/boj.md">업데이트 노트</a> | <a href="https://github.com/Startlink/update-note/blob/master/boj-issues.md">이슈</a> | <a href="https://github.com/Startlink/update-note/blob/master/boj-todo.md">TODO</a></p></div><div class="col-md-3 col-sm-12"><ul class="social-icons pull-right"><li><a class="rounded-x social_facebook" data-original-title="Facebook" href="https://www.facebook.com/onlinejudge"></a></li><li><a class="rounded-x social_wordpress" data-original-title="Wordpress" href="https://startlink.blog"></a></li></ul></div></div><div class="row"><div class="col-sm-12"><a class="hidden-xs" href="https://startlink.io"><img class="pull-right startlink-logo" src="https://d2gd6pc034wcta.cloudfront.net/logo/startlink-logo-white-only.png"/></a><ul class="list-unstyled simple-list"><li>사업자 등록 번호: 541-88-00682</li><li>대표자명: 최백준</li><li>주소: 서울시 서초구 서초대로74길 29 서초파라곤 412호</li><li>전화번호: 02-521-0487 (이메일로 연락 주세요)</li><li>이메일: <a href="mailto:contacts@startlink.io">contacts@startlink.io</a></li><li>통신판매신고번호: 제 2017-서울서초-2193 호</li></ul></div><div class="col-sm-9"><p id="no-acm-icpc">이 사이트는 ACM 또는 ICPC 대회와 무관하며, ACM으로부터 승인이나 지원을 받지 않고 있습니다.</p></div><div class="col-sm-3"><p class="pull-right"><a href="https://www.acmicpc.net/lang?lang=0&amp;next=%2F">한국어</a> | <a href="https://www.acmicpc.net/lang?lang=1&amp;next=%2F">English (Beta)</a></p></div></div></div></div></div>
+</div>
+<div class="fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div><script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '322026491226049',
+    cookie     : true,
+    xfbml      : true,
+    version    : 'v2.8'
+});
+};
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/ko_KR/sdk.js";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+!function(f,b,e,v,n,t,s){ if(f.fbq)return;n=f.fbq=function(){ n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments) };if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s) }(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1670563073163149');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" src="https://www.facebook.com/tr?id=1670563073163149&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/ko.js" type="text/javascript"></script>
+<script src="https://ddo7jzca0m2vt.cloudfront.net/unify/js/app.min.js?version=20240111" type="text/javascript"></script><script type="text/javascript">jQuery(document).ready(function() {App.init(0);});</script><!--[if lt IE 9]><script src="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/respond.js"></script><script src="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/html5shiv.js"></script><script src="https://ddo7jzca0m2vt.cloudfront.net/unify/js/plugins/placeholder-IE-fixes.js"></script><![endif]--><script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js" type="text/javascript"></script><script src="https://js.pusher.com/4.2/pusher.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+<script src="https://ddo7jzca0m2vt.cloudfront.net/js/mathjax.js"></script><script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/jquery.parallax.js" type="text/javascript"></script>
+<script src="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/counter/waypoints.min.js" type="text/javascript"></script>
+<script src="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/counter/jquery.counterup.min.js" type="text/javascript"></script>
+<script src="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+<script src="https://ddo7jzca0m2vt.cloudfront.net/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+<script src="https://ddo7jzca0m2vt.cloudfront.net/unify/js/plugins/revolution-slider.js" type="text/javascript"></script>
+<script>
+  $(document).ready(function () {
+    $('li.dropdown').hover(
+      function () {
+        $(this).addClass('open');
+      },
+      function () {
+        $(this).removeClass('open');
+      }
+    );
+  });
+</script>
+<script javascript"="" type-"text="">
+	$(document).ready(function() {
+		RevolutionSlider.initRSfullWidth();
+		$('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+        $(window).load(function() {
+            $('.parallaxBg').parallax("50%", 0.2);
+            $('.parallaxBg1').parallax("50%", 0.4);
+        });
+	});
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('li.dropdown').hover(
+      function () {
+        $(this).addClass('open');
+      },
+      function () {
+        $(this).removeClass('open');
+      }
+    );
+  });
+</script>
+</body></html>
